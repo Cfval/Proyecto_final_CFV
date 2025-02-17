@@ -50,8 +50,6 @@ cd films-backend
 docker-compose -f docker-compose-dev.yml up -d
 ```
 
-Este comando descargará las imágenes necesarias y activará el backend.
-
 ### Frontend
 
 Para iniciar el contenedor del frontend, dirígete al directorio adecuado y ejecuta:
@@ -60,8 +58,6 @@ Para iniciar el contenedor del frontend, dirígete al directorio adecuado y ejec
 cd films-frontend
 docker-compose -f docker-compose-dev.yml up -d
 ```
-
-Esto pondrá en funcionamiento el entorno de desarrollo del frontend, accesible desde tu navegador.
 
 ## Acceso
 
