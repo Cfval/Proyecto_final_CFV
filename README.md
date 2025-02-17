@@ -70,6 +70,7 @@ Con los contenedores en ejecución, puedes acceder a la aplicación mediante las
 Para que tu sistema reconozca estos dominios, es necesario modificar el archivo `hosts` (/etc/hosts) añadiendo:
 
 127.0.0.1 backend.api.dev.com
+
 127.0.0.1 frontend.api.dev.com
 
 ## Detener los Contenedores
