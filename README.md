@@ -64,6 +64,7 @@ docker-compose -f docker-compose-dev.yml up -d
 Con los contenedores en ejecución, puedes acceder a la aplicación mediante las siguientes URLs:
 
 **Backend:** [http://films.api.dev.com:8080/](http://films.api.dev.com:8080/)
+
 **Frontend:** [http://films.dev.com:8081/](http://films.dev.com:8081/)
 
 Para que tu sistema reconozca estos dominios, es necesario modificar el archivo `hosts` (/etc/hosts) añadiendo:
