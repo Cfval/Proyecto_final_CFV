@@ -1,5 +1,0 @@
-ip: "backend-db"
-dbname: "films"
-user: "dbuser"
-pass: "dbuser"
-
