@@ -46,7 +46,7 @@ Cada directorio posee un archivo `docker-compose-dev.yml` para iniciar los conte
 Para arrancar el contenedor del backend, navega al directorio correspondiente y ejecuta:
 
 ```bash
-cd films-backend
+cd backend
 docker-compose -f docker-compose-dev.yml up -d
 ```
 
@@ -55,7 +55,7 @@ docker-compose -f docker-compose-dev.yml up -d
 Para iniciar el contenedor del frontend, dirígete al directorio adecuado y ejecuta:
 
 ```bash
-cd films-frontend
+cd frontend
 docker-compose -f docker-compose-dev.yml up -d
 ```
 
@@ -63,9 +63,9 @@ docker-compose -f docker-compose-dev.yml up -d
 
 Con los contenedores en ejecución, puedes acceder a la aplicación mediante las siguientes URLs:
 
-**Backend:** [http://films.api.dev.com:8080/](http://films.api.dev.com:8080/)
+**Backend:** [http://backend.api.dev.com:8080/](http://backend.api.dev.com:8080/)
 
-**Frontend:** [http://films.dev.com:8081/](http://films.dev.com:8081/)
+**Frontend:** [http://frontend.dev.com:8081/](http://frontend.dev.com:8081/)
 
 Para que tu sistema reconozca estos dominios, es necesario modificar el archivo `hosts` (/etc/hosts) añadiendo:
 
