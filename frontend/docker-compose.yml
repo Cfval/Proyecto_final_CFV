@@ -4,7 +4,8 @@ services:
     container_name: frontend
     volumes:
       - ./app:/var/www/html/app
-      - ./config/prod/virtualhosts/frontend.api.prod.conf:/etc/apache2/sites-enabled/frontend.api.prod.conf
+      - ./config/prod/virtualhosts/backendcfv.chickenkiller.com.conf:/etc/apache2/sites-enabled/backendcfv.chickenkiller.com.conf
       - ./config/prod/virtualhosts/urls.js:/var/www/html/app/public_html/config/urls.js
     ports:
       - "80:80"
+    restart: always
