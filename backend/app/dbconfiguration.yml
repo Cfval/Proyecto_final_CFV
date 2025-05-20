@@ -1,4 +1,4 @@
-ip: "backend-db"
+ip: "db"
 dbname: "films"
 user: "dbuser"
 pass: "dbuser"
