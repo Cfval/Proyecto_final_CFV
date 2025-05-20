@@ -49,7 +49,7 @@ Para arrancar el contenedor del backend, navega al directorio correspondiente y 
 cd backend
 docker-compose -f docker-compose-dev.yml up -d
 ```
-
+Usar docker-compose up o docker-compose build si no es la pirmera vez que se arranca el mismo contenedor. 
 ### Frontend
 
 Para iniciar el contenedor del frontend, dirígete al directorio adecuado y ejecuta:
@@ -65,7 +65,7 @@ Con los contenedores en ejecución, puedes acceder a la aplicación mediante las
 
 **Backend:** [http://backend.api.dev.com:8080/](http://backend.api.dev.com:8080/)
 
-**Frontend:** [http://frontend.dev.com:8081/](http://frontend.dev.com:8081/)
+**Frontend:** [http://frontend.api.dev.com:8081/](http://frontend.api.dev.com:8081/)
 
 Para que tu sistema reconozca estos dominios, es necesario modificar el archivo `hosts` (/etc/hosts) añadiendo:
 
