@@ -49,7 +49,7 @@ Para arrancar el contenedor del backend, navega al directorio correspondiente y 
 cd backend
 docker-compose -f docker-compose-dev.yml up -d
 ```
-
+Usar docker-compose up o docker-compose build si no es la pirmera vez que se arranca el mismo contenedor. 
 ### Frontend
 
 Para iniciar el contenedor del frontend, dirígete al directorio adecuado y ejecuta:
