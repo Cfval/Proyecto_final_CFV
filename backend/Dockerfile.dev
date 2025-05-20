@@ -1,20 +1,18 @@
-FROM debian:latest
+#Imagen base
+FROM debian
 
-LABEL org.opencontainers.image.authors="cfval"
+LABEL org.opencontainers.image.authors="carlosfrances.alu@iespacomolla.es"
 
-RUN apt-get update && apt-get install -y \
-    apache2 \
-    php \
-    php-cli \
-    php-mysql \
-    vim \
-    && apt-get clean
+#Actualizaciones + instalación de VIM y NANO + instalación del servidor web Apache2 + PHP
+RUN apt-get update && \
+    apt-get install -y vim nano apache2 php php-yaml php-mysql libapache2-mod-php
 
-RUN a2enmod rewrite && a2enmod headers
+RUN a2enmod rewrite && \
+    a2enmod headers
 
-WORKDIR /var/www/html
-
+#Expongo el puerto de Apache2
 EXPOSE 80
 
+#Habilito php-fpm y Apache para que arranque cada vez que el contenedor se inicie
 CMD ["apache2ctl", "-D", "FOREGROUND"]
 
