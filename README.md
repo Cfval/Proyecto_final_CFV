@@ -65,7 +65,7 @@ Con los contenedores en ejecución, puedes acceder a la aplicación mediante las
 
 **Backend:** [http://backend.api.dev.com:8080/](http://backend.api.dev.com:8080/)
 
-**Frontend:** [http://frontend.api.dev.com:8081/](http://frontend.api.dev.com:8081/)
+**Frontend:** [http://frontend.api.dev.com:8081/](http://frontend.api.dev.com:81/)
 
 Para que tu sistema reconozca estos dominios, es necesario modificar el archivo `hosts` (/etc/hosts) añadiendo:
 
