@@ -1,2 +1,2 @@
-let apiUrl = "http://backendcfv.chickenkiller.com:8080";
+let apiUrl = "http://backendcfv.api.chickenkiller.com:8080";
 

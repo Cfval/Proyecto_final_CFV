@@ -20,7 +20,7 @@ services:
       - ./app:/var/www/html/app
       - ./config/prod/virtualhosts/backendcfv.api.chickenkiller.com.conf:/etc/apache2/sites-enabled/backendcfv.api.chickenkiller.com.conf
     ports:
-      - "8080:80"
+      - "80:80"
     restart: always
     depends_on:
       - db
