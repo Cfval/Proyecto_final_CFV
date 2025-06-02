@@ -107,5 +107,36 @@ SHOW TABLES;
 ```
 
 
+## PROD
+
+
+.env  en cd backend 
+
+MYSQL_ROOT_PASSWORD=toor
+MYSQL_USER=dbuser
+MYSQL_PASSWORD=dbuser
+MYSQL_DATABASE=films
+
+Entrar a la db:
+
+docker exec -it backend-api bash
+
+apt update && apt install -y default-mysql-client
+
+mysql -h backend-db -u dbuser -p
+# contraseña: dbuser
+
+USE films;
+
+SELECT * FROM film;
+
+
+## Reiniciar contenedores
+
+docker compose down
+docker compose up -d
+
+
+
 
 

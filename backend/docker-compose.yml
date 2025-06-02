@@ -3,7 +3,7 @@ services:
     image: mysql:8.0.35-debian
     container_name: backend-db
     ports:
-      - "3307:3306"
+      - "3306:3306"
     restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
@@ -20,7 +20,7 @@ services:
       - ./app:/var/www/html/app
       - ./config/prod/virtualhosts/backendcfv.api.chickenkiller.com.conf:/etc/apache2/sites-enabled/backendcfv.api.chickenkiller.com.conf
     ports:
-      - "80:80"
+      - "8080:80"
     restart: always
     depends_on:
       - db
