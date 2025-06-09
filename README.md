@@ -133,8 +133,12 @@ SELECT * FROM film;
 
 ## Reiniciar contenedores
 
-docker compose down
+docker compose down 
+/
 docker compose up -d
+
+docker compose up -d --build
+Cuando haces cambios en archivos como Dockerfile o virtualhosts, necesitas forzar la reconstrucción con --build
 
 
 
